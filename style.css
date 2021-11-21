@@ -30,7 +30,7 @@ hr {
   color: white;
 }
 
-div {
+article {
   width: 80%;
   display: grid;
   grid-template-columns: 1fr 1fr;
