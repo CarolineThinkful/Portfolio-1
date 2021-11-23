@@ -1,85 +1,90 @@
+<!-- Start with doctype html, doctype must be capitalized-->
 <!DOCTYPE html>
+<!-- create html tags, which will wrap around code (head and body specifically)-->
 <html lang="en">
+  <!-- create head tags for html website framework -->
   <head>
+    <!-- set characters for browser processing -->
     <meta charset="utf-8">
+    <!-- set page width-->
     <meta name="viewport" content="width=device-width" >
+    <!-- set tab title-->
     <title>Caroline Thinkful Profile</title>
+    <!-- normalize.css-->
     <link
     href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
     rel="stylesheet"
     type="text/css"
     />
+    <!-- set relationship between html and css-->
    <link href="style.css" rel="stylesheet" type="text/css" />
   </head> 
+  <!-- conatins main code for website images, links, etc.-->
   <body> 
+    <!-- create a header div to contain name and title-->
     <header>
       <div>
+        <!-- Name-->
         <h1>Caroline Thinkful</h1>
+        <!-- title-->
         <h4>Future Software Developer</h4>
       </div>
     </header>
-
+    <!-- horizontal lines to seperate each div-->
     <hr>
 
     <main> 
-      <div>
+      <!-- create class to differentiate following divs from divs in header and footer-->
+      <div class="info-section">
+        <!-- create srticle since following text will be related-->
         <article>
-          <section class="content">
-            <h3>Let Me Introduce Myself</h3>
-            <p>My name is Caroline, and I am currently working towards becoming a Software Developer in Miami, Florida.</p>
-            <p>I am looking forward to applying theses skills in man different facets, but I am most excited to develop a software for sports data analytics. I am excited about the opportunity to connect both worlds: my current career as a collegiate rowing coach and my future as a software developer.</p>
-            <p>My current skillset includes, but is not limited to:</p>
-            <ol>
+            <h2>Let Me Introduce Myself</h2>
+              <p>My name is Caroline Escobar, and I am currently working towards becoming a Software Developer through the Thinkful Software Enginnering Flex Program in Miami, FL.</p>
+             <p>I am looking forward to applying theses skills in man different facets, but I am most excited to develop a software for sports data analytics. I am excited about the opportunity to connect both worlds: my current career as a collegiate rowing coach and my future as a software developer.</p>
+             <p>My current skillset includes, but is not limited to:</p>
+             <!-- organized list of current skills set-->
+             <ol>
               <li>Leadership</li>
               <li>Problem Solving</li>
               <li>Cirriculum Development</li>
               <li>Operations</li>
-            </ol>
+             </ol>
               <p>Please take a look at my website to learn a little more about myself and should you have any more questions, please feel free to Contact Me.</p>
-          </section>
-          <section>
-            <img src="headshot.jpg" alt="Headshot">
-          </section> 
-        </article>
+          </article>
+          <img src="headshot.jpg" alt="Headshot">      
       </div>
       
       <hr>
      
-      <div>
+      <div class="info-section">
+        <img src="rowing.jpg" alt="rowing">
         <article>
-          <section>
-            <img src="rowing.jpg" alt="Rowing">
-          </section>
-          <section>
-            <h3>About Me</h3>
-            <p>I am most fortunate for this life. I have been lucky to explore and develop many skills and interests in my life. During my undergraduate studies I was able to try-out and walk-on to the Women's Rowing Team. Before I knew it, I was coaching the university club team at my Graduate school, and then I realized this was not just a hobby.</p>
-            <p>I followed this passion for the next five years, which took me from highschool rowing coach, to collegiate coach at multiple levels. I am most proud of the Division II National Championship I won during that time.</p>
-            <p>Since then, I have noticed a growth in data analytics in the athletics industry. However, the rowing world has not quite caught up. Which is what initally sparked my interest in software development. Currently, rowing coaches everywhere are limited to Excel. Leaving many uniterested in diving more into the optimization of this sport.</p>
-            <p>Thinkful is providing me with the skillset to develop everything from small websites, to coplex apps. Ultimately, I'm looking forward to developing that software that makes it simple, but engaging, for coaches everywhere to learn more about their athletes and their potential.</p>
-          </section>
-        </article>  
+          <h2>About Me</h2>
+          <p>I am most fortunate for this life. I have been lucky to explore and develop many skills and interests in my life. During my undergraduate studies I was able to try-out and walk-on to the Women's Rowing Team. Before I knew it, I was coaching the university club team at my Graduate school, and then I realized this was not just a hobby.</p>
+          <p>I followed this passion for the next five years, which took me from highschool rowing coach, to collegiate coach at multiple levels. I am most proud of the Division II National Championship I won during that time.</p>
+          <p>Since then, I have noticed a growth in data analytics in the athletics industry. However, the rowing world has not quite caught up. Which is what initally sparked my interest in software development. Currently, rowing coaches everywhere are limited to Excel. Leaving many uniterested in diving more into the optimization of this sport.</p>
+          <p>Thinkful is providing me with the skillset to develop everything from small websites, to coplex apps. Ultimately, I'm looking forward to developing that software that makes it simple, but engaging, for coaches everywhere to learn more about their athletes and their potential.</p>
+        </article>
       </div>
       
       <hr>
     
-      <div>
+      <div class="info-section">
         <article>
-          <section>
-            <h3>Contact Me</h3>
-            <p>If you have any questions, please feel free to contact or follow me at the links below.</p>
-            <a href="https://www.linkedin.com/in/cescobar04/" class="btn">LinkedIn</a>
-            <a href="https://github.com/CarolineThinkful" class="btn">GitHub</a>
-            <a href="mailto:c,escobar04@outlook.com" class="btn">Email</a>
-          </section>
-          <section>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d229929.1760314769!2d-80.36954411689972!3d25.78234042826896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9b0a20ec8c111%3A0xff96f271ddad4f65!2sMiami%2C%20FL!5e0!3m2!1sen!2sus!4v1637425489137!5m2!1sen!2sus" width="auto" height="300px" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-          </section>
+          <h2>Contact Me</h2>
+          <p>If you have any questions, please feel free to contact or follow me at the links below.</p>
+          <!-- links to linkedIn, gitHub, and email for contact sources and define button class for button design in CSS-->
+          <a href="https://www.linkedin.com/in/cescobar04/" class="btn">LinkedIn</a>
+          <a href="https://github.com/CarolineThinkful" class="btn">GitHub</a>
+          <a href="mailto:c.escobar04@outlook.com" class="btn">Email</a>
         </article>
+        <!-- insert map-->
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d229929.1760314769!2d-80.36954411689972!3d25.78234042826896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9b0a20ec8c111%3A0xff96f271ddad4f65!2sMiami%2C%20FL!5e0!3m2!1sen!2sus!4v1637425489137!5m2!1sen!2sus" style="border:0;" allowfullscreen="" loading="lazy"></iframe>     
       </div>
     </main>
 
     <hr>
-
+    <!-- footer-->
     <footer>
       <p>Copyright Caroline Thinkful</p>
     </footer>
