@@ -1,36 +1,34 @@
+/** create overall background color*/
 html {
   background-color: whitesmoke;
 }
-
+/** creating unique text and size for h1*/
 h1 {
   font-size: 50px;
   color: lightslategray;
   font-family: Garamond;
 }
+/** creatin gunique font for subheader */ 
 h4 { 
   font-family: 'Trebuchet MS';
 }
-
+/** centering and settin gofnt to uppercase in both header and footer*/
 header, footer {
   text-transform: uppercase;
   text-align: center;
 }
-
-h3 {
+/** setting font color and family for ALL h2 headers*/
+h2 {
   color: ghostwhite;
   font-family: 'Lucida Sans';
 
 }
-
+/** setting ALL paragragn fonts to times new roman*/
 p{
   font-family: 'times new roman';
 }
-
-hr {
-  color: white;
-}
-
-article {
+/** setting each information section to grid display to have text and images align side-by-side*/
+.info-section {
   width: 80%;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -40,25 +38,30 @@ article {
   align-items: center;
   padding: 20px;
 }
-
-section {
+/** align text in each section to center*/
+article {
   align-item: center;
   padding: 10px;
 }
-
-ul {
+/** want text to align with numbers of organized list, so set text alignment to left*/
+ol {
   text-align: left !important;
 }
-
+/** want to create conditions for images to stay centered in frame, while fitting the frame equal to size of section without surpassing specific height*/
 img {
   max-height: 500px;
   max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
-
-.content {
-  padding-left: 10%;
+/** want to create conditions for map to stay centered in frame, while fitting the frame equal to size of section*/
+iframe {
+  height: auto;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
-
+/** setting button conditions for white buttons with black text and border*/
 .btn {
   display: inline-block;
   font-family: arial, sans-serif;
@@ -70,6 +73,21 @@ img {
   border-radius: 6px;
   background-color: white;
   border: 1px solid black;
-  color: black;
+  
 }
 
+a:link {
+  color: black;
+  }
+
+a:visited {
+  color: darkslateblue;
+}
+
+a:hover {
+  color: steelblue;
+}
+
+a:active {
+  color: slateblue;
+}
